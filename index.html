@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;900&display=swap" rel="stylesheet">
+    <title>Starbucks Site</title>
+</head>
+<body>
+    <section>
+        <div class="circle">
+        </div>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/kisspng-coffee-starbucks-logo-sun-valley-ski-education-off-starbucks-logo-5a754d4a1cb647.9725811615176369381176.png" class="logo"/>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <div class="menuMobile">
+                            <div class="mm-line"></div>
+                            <div class="mm-line"></div>
+                            <div class="mm-line"></div>
+                        </div>
+                        <ul>
+                            <li class="active"><a href-"">Home</a></li>
+                            <li><a href-"">Menu</a></li>
+                            <li><a href-"">What's New</a></li>
+                            <li><a href-"">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+</body>
+    <div class="content">
+        <div class="banner-headline">
+            <h1>It's not just Coffee</br>It's <span id="title">Starbucks</span></style></h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem voluptas perferendis sed nihil quasi. Nulla soluta, consectetur minus enim libero labore unde. Incidunt hic quod repellat. Facilis reiciendis excepturi doloremque?</h2>
+            <div class="button">
+                <a href="">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="assets/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" class="starbucks">
+        </div>
+        <ul class="thumb">
+            <li><img src="assets/thumb1.png" onclick="imgSlider('assets/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png');changeColor('#096647')"></li>
+            <li><img src="assets/thumb2.png" onclick="imgSlider('assets/2.png');changeColor('#eb7495')"></li>
+            <li><img src="assets/thumb3.png" onclick="imgSlider('assets/3.png');changeColor('#d752b1')"></li>
+        </ul>
+        <ul class="publicity">
+            <li><a href=""><img src="assets/facebook.png"></a></li>
+            <li><a href=""><img src="assets/twitter.png"></a></li>
+            <li><a href=""><img src="assets/instagram.png"></a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>    
+</html>
